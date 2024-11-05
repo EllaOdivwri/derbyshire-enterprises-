@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center - Derbyshire Enterprises</title>
+  <style>
+      body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Img.6.jpg');
+            background-size: cover;
+            color: rgb(249, 246, 246);
+        
+    }
+    
+        .main-header {
+            background-color: rgba(79, 154, 235, 0.6);
+            padding: 10px 20px;
+            text-align: center;
+        }
+    
+        .horizontal-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .horizontal-nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+    
+        .horizontal-nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        .secondary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid white;
+            padding-top: 10px;
+        }
+    
+        .left-section {
+            flex: 1;
+        }
+    
+        .right-section {
+            flex: 1;
+            text-align: right;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .faq, .troubleshooting, .contact-form {
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .faq-item, .troubleshooting-item {
+            margin-bottom: 15px;
+        }
+        .faq-item h3, .troubleshooting-item h3 {
+            margin: 0 0 5px 0;
+            cursor: pointer;
+            color: #ffffff;
+        }
+        .faq-item p, .troubleshooting-item p {
+            display: none;
+            margin: 0;
+        }
+        .faq-item h3:hover, .troubleshooting-item h3:hover {
+            color: #007BFF;
+        }
+footer {
+  background-color: rgba(79, 154, 235, 0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.follow-us {
+  margin-top: 10px;
+}
+
+.follow-us a {
+  margin-left: 10px;
+}
+.follow-us img {
+  width: 30px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}        
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var faqItems = document.querySelectorAll(".faq-item h3");
+            faqItems.forEach(function(item) {
+                item.addEventListener("click", function() {
+                    var content = this.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+
+            var troubleshootingItems = document.querySelectorAll(".troubleshooting-item h3");
+            troubleshootingItems.forEach(function(item) {
+                item.addEventListener("click", function() {
+                    var content = this.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="horizontal-nav">
+            <h1>Derbyshire Enterprises</h1>
+        </nav>
+
+        <div class="secondary-header">
+            <div class="left-section"><a href="Derbyshire-Enterprise.html">Home</a></div>
+            <div class="right-section">
+            </div>
+        </div>
+    </header>
+    <div class="main-header">
+        <h1>Help Center</h1>
+        <p>Your one-stop solution for support and troubleshooting</p>
+    </div>
+    <div class="container">
+        <!-- FAQs Section -->
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-item">
+                <h3>What is the return policy?</h3>
+                <p>Our return policy allows you to return products within 30 days of purchase. Please ensure the products are in their original condition.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I track my order?</h3>
+                <p>You can track your order using the tracking number provided in your order confirmation email. Visit our tracking page for more details.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I contact customer support?</h3>
+                <p>You can contact our customer support via the contact form  or by calling our support hotline at +447123456789.</p>
+            </div>
+        </div>
+        <!-- Troubleshooting Section -->
+        <div class="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <div class="troubleshooting-item">
+                <h3>Why is my order delayed?</h3>
+                <p>Order delays can occur due to various reasons such as high demand, inventory issues, or shipping carrier delays. Check your order status for the latest updates.</p>
+            </div>
+            <div class="troubleshooting-item">
+                <h3>Why can't I log into my account?</h3>
+                <p>If you're having trouble logging in, please ensure you're using the correct email and password. If you've forgotten your password, use the 'Forgot Password' link to reset it.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="Derbyshire-Enterprise.html">Home</a></li>
+            <li><a href="help-center.html">Help Center</a></li>
+            <li><a href="Policy.html">Policy</a></li>
+            <li><a href="Products&Services.html">Products & Services</a></li>
+          </ul>
+        </nav>
+        <div class="follow-us">
+          <span>Follow us:</span>
+          <a href="#"><img src="facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+        <p>&copy; 2024 Derbyshire Enterprise</p>
+      </footer>
+    </body>
+    </html>
+    

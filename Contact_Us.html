@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derbyshire Enterprises</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('Img.3.jpg');
+        background-size: cover;
+        color: rgb(4, 4, 4);
+    }
+
+    .main-header {
+        background-color: rgba(168, 219, 244, 0.8);
+        padding: 10px 20px;
+    }
+
+    .horizontal-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .horizontal-nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .horizontal-nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .secondary-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+
+    .left-section {
+        flex: 1;
+    }
+
+    .right-section {
+        flex: 1;
+        text-align: right;
+    }
+    .header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    .stay-in-touch {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .company img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+    }
+    .company img:hover {
+        transform: scale(1.1);
+    }
+    .stay-in-touch h2 {
+        margin-top: 0;
+    }
+    .stay-in-touch a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .stay-in-touch a:hover {
+        text-decoration: underline;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    .form-group button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .form-group button:hover {
+        background-color: #555;
+    }    
+    footer {
+        background-color: rgba(168, 219, 244, 0.8);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .footer-nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .follow-us {
+        margin-top: 10px;
+    }
+
+    .follow-us a {
+        margin-left: 10px;
+    }
+    .follow-us img {
+        width: 30px; 
+        height: auto;
+        margin-right: 10px; 
+    }
+
+    input[type="text"] {
+        padding: 5px;
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>  
+</head>
+<body>
+  <header class="main-header">
+    <nav class="horizontal-nav">
+      <h1>Derbyshire Enterprises</h1>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="secondary-header">
+      <div class="left-section"><a href="Derbyshire-Enterprise.html">Home</a></div>
+      <div class="right-section">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+      </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="stay-in-touch">
+        <h2>Stay in Touch</h2>
+        <!-- Newsletter Signup -->
+        <div class="form-group">
+            <label for="newsletter-email">Sign up to get the latest newsletter:</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email">
+            <button type="submit">Sign Up</button>
+        </div>
+        <!-- Contact Us -->
+        <div class="form-group">
+            <h3>Contact Us</h3>
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" placeholder="Your name">
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" placeholder="Your email">
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="contact-message" rows="4" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </div>
+        <!-- Vulnerability Reporting -->
+        <div class="form-group">
+            <h3>Vulnerability Reporting</h3>
+            <p>If you find any vulnerabilities, please report them to us at <a href="mailto:security@derbyshire-enterprises.com">security@derbyshire-enterprises.com</a>.</p>
+        </div>
+        <!-- Help Center -->
+        <div class="form-group">
+            <h3>Help Center</h3>
+            <p>Visit our <a href="help-center.html">Help Center</a> for assistance with our services and products.</p>
+        </div>
+    </div>
+</div>
+
+
+
+  
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="Derbyshire-Enterprise.html">Home</a></li>
+        <li><a href="help-center.html">Help Center</a></li>
+        <li><a href="Policy.html">Policy</a></li>
+        <li><a href="Products&Services.html">Products & Services</a></li>
+      </ul>
+    </nav>
+    <div class="follow-us">
+      <span>Follow us:</span>
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+    </div>
+    <p>&copy; 2024 Derbyshire Enterprise</p>
+  </footer>
+</body>
+</html>

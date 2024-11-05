@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derbyshire Enterprises</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('Img.2.jpg');
+        background-size: cover;
+        color: rgb(4, 4, 4);
+    }
+
+    .main-header {
+        background-color: rgba(203, 230, 244, 0.8);
+        padding: 10px 20px;
+    }
+
+    .horizontal-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .horizontal-nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .horizontal-nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .secondary-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+
+    .left-section {
+        flex: 1;
+    }
+
+    .right-section {
+        flex: 1;
+        text-align: right;
+    }
+    .header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    .company {
+        background-color: rgba(255, 253, 253, 0.9);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .company img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+    }
+    .company img:hover {
+        transform: scale(1.1);
+    }
+    .company h2 {
+        margin-top: 0;
+    }
+    .company a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .company a:hover {
+        text-decoration: underline;
+    }
+    .info {
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 253, 253, 0.7);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .info p {
+      margin-top: 0;
+    }
+    footer {
+  background-color: rgba(203, 230, 244, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.follow-us {
+  margin-top: 10px;
+}
+
+.follow-us a {
+  margin-left: 10px;
+}
+.follow-us img {
+  width: 30px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+input[type="text"] {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+</style>  
+</head>
+<body>
+  <header class="main-header">
+    <nav class="horizontal-nav">
+      <h1>Derbyshire Enterprises</h1>
+      <p>Explore some of the prominent businesses in Derbyshire</p>
+      <ul>
+        <li><a href="#">Products & Services</a></li>
+      </ul>
+    </nav>
+    <div class="secondary-header">
+      <div class="left-section"><a href="Derbyshire-Enterprise.html">Home</a></div>
+      <div class="right-section">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+      </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <!-- Company 1: Rolls Royce -->
+    <div class="company">
+        <img src="Rolls Royce.jpg" alt="Rolls Royce Logo">
+        <h2>Rolls Royce</h2>
+        <p>Opening Hours: Mon-Fri, 9 AM - 5 PM</p>
+        <p>Location: Derby, Derbyshire</p>
+        <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+        <p><a href="https://www.rolls-royce.com">Visit Website</a></p>
+        <p><strong>Interview:</strong> <em>"Rolls Royce's commitment to innovation and quality engineering is evident in every product they deliver."</em></p>
+    </div>
+    <!-- Company 2: Toyota -->
+    <div class="company">
+        <img src="Toyota.jpg" alt="Toyota Logo">
+        <h2>Toyota</h2>
+        <p>Opening Hours: Mon-Fri, 8 AM - 6 PM</p>
+        <p>Location: Burnaston, Derbyshire</p>
+        <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+        <p><a href="https://www.toyota.co.uk">Visit Website</a></p>
+        <p><strong>Interview:</strong> <em>"Toyota's reliability and exceptional customer service make them my go-to choice for vehicles."</em></p>
+    </div>
+    <!-- Company 3: Thorntons -->
+    <div class="company">
+        <img src="Thorntons.jpg" alt="Thorntons Logo">
+        <h2>Thorntons</h2>
+        <p>Opening Hours: Mon-Sun, 9 AM - 8 PM</p>
+        <p>Location: Alfreton, Derbyshire</p>
+        <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+        <p><a href="https://www.thorntons.co.uk">Visit Website</a></p>
+        <p><strong>Interview:</strong> <em>"Thorntons' chocolates are a delightful indulgence, with every bite showcasing their dedication to craftsmanship."</em></p>
+    </div>
+    <!-- Company 4: Denby -->
+    <div class="company">
+        <img src="Denby-Pottery.jpg" alt="Denby Logo">
+        <h2>Denby</h2>
+        <p>Opening Hours: Mon-Sat, 9 AM - 5:30 PM</p>
+        <p>Location: Denby, Derbyshire</p>
+        <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+        <p><a href="https://www.denbypottery.com">Visit Website</a></p>
+        <p><strong>Interview:</strong> <em>"Denby's pottery combines beautiful design with durability, making it perfect for both everyday use and special occasions."</em></p>
+    </div>
+    <!-- Company 5: Bombardier Inc. -->
+    <div class="company">
+      <img src="Bombardier.jpg" alt="Denby Logo">
+      <h2>Bombardier Inc.</h2>
+      <p>Opening Hours: Mon-Fri, 9 AM - 5:30 PM</p>
+      <p>Location: Derby, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://bombardier.com/en">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Bombardier's trains provide a smooth and comfortable ride, reflecting their expertise in transportation solutions."</em></p>
+  </div>
+    <!-- Company 6: Peakdale Molecular Ltd -->
+    <div class="company">
+      <img src="Peakdale-Molecular.jpg" alt="Denby Logo">
+      <h2>Peakdale Molecular Ltd</h2>
+      <p>Opening Hours: Mon-Fri, 9 AM - 5:00 PM</p>
+      <p>Location: High Peak district, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.manufacturingchemist.com/peakdale-molecular-30193">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Peakdale Molecular offers cutting-edge research and development services that significantly advance our projects."</em></p>
+  </div>
+    <!-- Company 7: Scitek Consultants Ltd -->
+    <div class="company">
+      <img src="Scitek-Consultants-Ltd.jpg" alt="Denby Logo">
+      <h2>Scitek Consultants Ltd</h2>
+      <p>Opening Hours: Mon-Fri, 8 AM - 17:00 PM</p>
+      <p>Location: Derby, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://scitekconsultants.co.uk/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Scitek's equipment and technical support are unparalleled, ensuring our lab operates at peak efficiency."</em></p>
+  </div>
+    <!-- Company 8: Chesterfield Special Cylinders Ltd -->
+    <div class="company">
+      <img src="Chesterfield-Special-Cylinders-Ltd.jpg" alt="Denby Logo">
+      <h2>Chesterfield Special Cylinders Ltd</h2>
+      <p>Opening Hours: Mon-Fri, 9 AM - 5:30 PM</p>
+      <p>Location: Sheffield, Yorkshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.chesterfieldcylinders.com/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Chesterfield Special Cylinders consistently deliver high-quality, reliable products that meet our stringent requirements."</em></p>
+  </div> 
+    <!-- Company 9: Cromford Mills (Arkwright Society) -->
+    <div class="company">
+      <img src="Cromford-Mills.jpg" alt="Denby Logo">
+      <h2>Cromford Mills (Arkwright Society)</h2>
+      <p>Opening Hours: Mon-Sun, 10 AM - 4:00 PM</p>
+      <p>Location: Matlock, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.cromfordmills.org.uk/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Visiting Cromford Mills is like stepping back in time, with its rich history and well-preserved industrial heritage."</em></p>
+  </div>
+    <!-- Company 10: Derbyshire Community Health Services NHS Foundation Trust -->
+    <div class="company">
+      <img src="Derbyshire-Healthcare-NHS.jpg" alt="Denby Logo">
+      <h2>Derbyshire Community Health Services NHS Foundation Trust</h2>
+      <p>Opening Hours: Outpatient service; Mon-Fri, 9 AM - 5:00 PM. Inpatient services;24/7.</p>
+      <p>Location:</p>
+      <ul>     
+        <li>Derby, Derbyshire</li>
+        <li>Chesterfield, Derbyshire</li>
+        <li>Ripley, Derbyshire</li>
+        <li>IIkeston, Derbyshire</li>
+        <li>Buxton, Derbyshire</li>
+        <li>Belper, Derbyshire</li>
+      </ul> 
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.derbyshirehealthcareft.nhs.uk/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"The care and attention provided by Derbyshire Community Health Services NHS Foundation are exceptional, making a real difference in the community."</em></p>
+      
+  </div>   
+    <!-- Company 11: Cathelco Ltd -->
+    <div class="company">
+      <img src="Cathelco.jpg" alt="Denby Logo">
+      <h2>Cathelco Ltd</h2>
+      <p>Opening Hours: Mon-Sat, 9 AM - 5:30 PM</p>
+      <p>Location: Chesterfield, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://evac.com/cathelco/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Cathelco's innovative marine solutions help us maintain our fleet efficiently and effectively."</em></p>
+  </div>
+    <!-- Company 12: Fowler & Holden Ltd -->
+    <div class="company">
+      <img src="Fowler-and-Holden.jpg" alt="Denby Logo">
+      <h2>Fowler & Holden Ltd</h2>
+      <p>Opening Hours: Mon-Thurs, 7:30 AM - 4:00 PM; Fri,7:30 AM - 12:30 PM</p>
+      <p>Location: Denby, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://fowlerandholden.co.uk/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Fowler and Holden's precision engineering services are top-notch, always meeting our exact specifications."</em></p>
+  </div>  
+    <!-- Company 13: YHA (England & Wales) -->
+    <div class="company">
+      <img src="YHA.jpg" alt="Denby Logo">
+      <h2>YHA (England & Wales)</h2>
+      <p>Opening Hours: Mon-Sat, 9 AM - 5:30 PM</p>
+      <p>Location: Peak District National Park, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.yha.org.uk/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Staying at YHA is always a pleasant experience, with affordable accommodations and friendly staff."</em></p>
+  </div>
+    <!-- Company 14: Bowmer & Kirkland Group -->
+    <div class="company">
+      <img src="Bowmer&Kirkland.jpg" alt="Denby Logo">
+      <h2>Bowmer & Kirkland Group</h2>
+      <p>Opening Hours: Mon-Fri, 8 AM - 5:00 PM</p>
+      <p>Location: Belper, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.bandk.co.uk/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"The Bowmer and Kirkland Group consistently delivers high-quality construction projects on time and within budget."</em></p>
+  </div>
+    <!-- Company 15: Buxton Water (Nestlé Waters) -->
+  <div class="company">
+      <img src="Buxton-water.jpg" alt="Buxton Water (Nestlé Waters) Logo">
+      <h2>Buxton Water (Nestlé Waters)</h2>
+      <p>Opening Hours: Mon-Sat, 9 AM - 5:30 PM</p>
+      <p>Location: Buxton, Derbyshire</p>
+      <p>Customer Reviews: ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.buxtonwater.co.uk/">Visit Website</a></p>
+      <p><strong>Interview:</strong> <em>"Buxton Water's crisp, refreshing taste makes it my preferred choice for bottled water."</em></p>
+  </div>
+</div>
+<div class="info">
+  <P>For more information about companies in Derbyshire <a href="https://www.derby.ac.uk/business-services/top-200-derbyshire-businesses/top-200---2022/#d.en.159362">Visit website.</a></p>
+</div>
+</body>
+
+
+    
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="Derbyshire-Enterprise.html">Home</a></li>
+        <li><a href="help-center.html">Help Center</a></li>
+        <li><a href="Policy.html">Policy</a></li>
+        <li><a href="Products&Services.html">Products & Services</a></li>
+      </ul>
+    </nav>
+    <div class="follow-us">
+      <span>Follow us:</span>
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+    </div>
+    <p>&copy; 2024 Derbyshire Enterprise</p>
+  </footer>
+</body>
+</html>
